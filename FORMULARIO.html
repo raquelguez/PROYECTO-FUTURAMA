@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUSCAR PERSONAJE</title>
+
+    <link rel="stylesheet" href="./style.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <img src="./assets/menu.svg" alt="" class="menu">
+    <nav class="menu-navegacion">
+        <a href="./INICIO.html">INICIO
+            <i class='bx bxs-home-alt-2'></i>
+        </a>
+        <a href="./INICIO.html">FUTURAMA
+            <i class='bx bxs-invader'></i>
+        </a>
+        <a href="./INICIO.html">GALERÍA
+            <i class='bx bxs-file-image'></i>
+        </a>
+        <a href="#busqueda">BÚSQUEDA
+            <i class='bx bx-search-alt'></i>
+        </a>
+        <a href="#likes">ME GUSTA
+            <i class='bx bxs-heart'></i>
+        </a>
+    </nav>
+
+
+    <div class="box">
+        <h2 class="subtitulo" id="busqueda">BÚSQUEDA</h2>
+        <form>
+            <input class="form-control" type="number" placeholder="Nº DE PERSONAJE...">
+            <button type="submit" class="btn" id="boton-personaje">BUSCAR</button>
+        </form>
+        <div class="persona-container">
+
+        </div>
+    </div>
+    <div class="box2">
+        <button class="btn-like" id="btn-like">
+            <i class='bx bx-like'></i>
+        </button>
+        <button class="btn-dislike" id="btn-dislike">
+            <i class='bx bx-dislike'></i>
+        </button>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <h2 class="favoritos">*** MIS FAVORITOS</h2>
+            <div class="likes">
+
+            </div>
+        </div>
+        <div class="line"></div>
+    </footer>
+
+    
+    <script type="text/javascript" src="./FORMULARIO.js" defer></script>
+</body>
+
+</html>

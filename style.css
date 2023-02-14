@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #eaebef;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0;
+}
+
+header {
+    height: 80vh;
+    background-image: linear-gradient(to top, rgba(161, 140, 209, 0.704) 0%, rgba(251, 194, 235, 0.693) 100%), url(./assets/futurama\ cabecera.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.head {
+    text-align: center;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+.menu {
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
+.menu-navegacion {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 15vw;
+    height: 100%;
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transform: translate(-110%);
+    /*transition: transform .3s ease-in-out; */
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
+.spread {
+    transform: translate(0);
+}
+
+.menu-navegacion a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.titulo {
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.copy {
+    font-weight: 300;
+    font-size: 25px;
+}
+
+.subtitulo {
+    text-align: center;
+    font-weight: 300;
+    color: #9f8ad0;
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+.contenedor-futurama {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contenedor-futurama img {
+    width: 45%;
+}
+
+.resumen-futurama {
+    width: 40%;
+    text-align: justify;
+}
+
+.futurama {
+    margin-bottom: 20px;
+}
+
+.resumen {
+    margin-bottom: 7px;
+    color: #9f8ad0;
+}
+
+.number {
+    display: inline-block;
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: 700;
+    line-height: 30px;
+    margin-right: 10px;
+}
+
+.gallery {
+    background: #f2f2f2;
+}
+
+.contenedor-galeria {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.img-galeria {
+    object-fit: cover;
+    width: 30%;
+    display: block;
+    margin-bottom: 15px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    cursor: pointer;
+}
+
+.imagen-light {
+    position: fixed;
+    background: rgba(0, 0, 0, .8);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(100%)
+        /*transition: transform .2s ease-in-out*/
+}
+
+.show {
+    transform: translate(0)
+}
+
+.agregar-imagen {
+    object-fit: cover;
+    width: 30%;
+    border-radius: 10px;
+    transform: scale(0);
+    transition: transform .3s .2s;
+}
+
+.showImage {
+    transform: scale(1);
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    cursor: pointer;
+}
+
+footer {
+    align-items: center;
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb00 100%);
+    padding-bottom: 0.1px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    margin-left: auto;
+    color: #fff;
+}
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    font-weight: 50;
+    font-size: 20px;
+}
+.logo-planet{
+    max-width: 20%;
+}
+.line{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 2px;
+    background: #fff;
+    margin-bottom: 60px;
+}
+/*--------------PROVISIONAL-----------------------REVISAR!!!!------------------- A PARTIR DE AQUÍ NADA TIENE SENTIDO
+.busqueda {
+    background: linear-gradient(to top, rgba(161, 140, 209, 0.704) 0%, rgba(251, 194, 235, 0.693) 100%),url(./assets/sombra.leela.jpg);
+}
+ */
+.box {
+    position: absolute;
+    width: 500px;
+    top: 300px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box2 {
+    position: relative;
+    display: flex;
+    justify-content:center;
+    margin-block: 44em;
+}
+
+.btn-like {
+    border-radius: 25px 0 0 25px;
+   
+}
+
+input {
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.249);
+}
+
+input[type="number"] {
+    background: #fff;
+    width: 340px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding: 0 25px;
+    border-radius: 25px 0 0 25px;
+}
+
+button {
+    position: relative;
+    left: -5px;
+    border-radius: 0 25px 25px 0;
+    width: 150px;
+    height: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #9f8ad0;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.249);
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: #fff;
+}
+
+.persona-container {
+    margin-top: 1em !important;
+    position: relative;
+    height: fit-content;
+    max-width: 300px;
+    border-radius: 4px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 0 25px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #9f8ad0;
+}
+
+.persona-container::before {
+    content: '';
+    background: radial-gradient(#9f8ad0 33%, transparent 33%);
+    background-size: 3px 3px;
+    border-radius: 4px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: -1;
+}
+
+.imagesContainer[class='img-container'] {
+    max-width: 100px !important;
+}
+
+
+@media screen and (max-width: 800px) {
+    .menu-navegacion {
+        width: 50vw;
+    }
+
+    .titulo {
+        font-size: 40px;
+    }
+
+    .contenedor-futurama img {
+        width: 80%;
+        margin-bottom: 40px;
+    }
+
+    .resumen-futurama {
+        width: 80%;
+    }
+
+    .futurama {
+        margin-bottom: 30px;
+    }
+
+    .agregar-imagen {
+        width: 80%;
+    }
+
+    .img-galeria {
+        width: 45%;
+    }
+
+    .footer-content {
+        width: 80%;
+        margin-bottom: 40px;
+    }
+    .logo-planet{
+        max-width: 50%;
+    }
+    /*desarrollar más adelante cuando tenga el formulario ready
+    .footer etc lo mismo*/
+}
+
+@media screen and (max-width: 500px) {
+    .menu-navegacion {
+        width: 65vw;
+    }
+
+    .menu {
+        top: 20px;
+        right: 20px;
+    }
+
+    .titulo {
+        font-size: 30px;
+    }
+
+    .subtitulo {
+        font-size: 30px;
+    }
+
+    .agregar-imagen {
+        width: 95%;
+    }
+
+    .img-galeria {
+        width: 95%;
+    }
+    .box {
+        width: 300px;
+    }
+
+    /*desarrollar más adelante cuando tenga el formulario ready
+    .footer etc lo mismo*/
+}
